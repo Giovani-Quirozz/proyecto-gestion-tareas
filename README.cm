@@ -1,0 +1,35 @@
+# 📝 Sistema de Gestión de Tareas (PostgreSQL + Python)
+
+Este es el repositorio central para el proyecto de **Sistemas de Información II**. El objetivo es construir una aplicación distribuida donde todos los integrantes se conecten a una base de datos única en la nube (Supabase).
+
+---
+
+## 📂 Estructura del Repositorio
+
+* **`backend/`**: Contiene `db_connection.py`. Es el "puente" hacia la base de datos.
+* **`frontend/`**: Carpeta de interfaces. **Regla:** Cada integrante crea su propia carpeta aquí (ej: `frontend/giovani/`).
+* **`database/`**: Contiene los scripts `.sql` para que todos tengamos las mismas tablas.
+* **`docs/`**: Carpeta para subir capturas de pantalla, diagramas y manuales.
+* **`venv/`**: Entorno virtual local (Ignorado por Git para no subir basura).
+
+---
+
+## 🚀 Guía de Configuración (Paso a Paso)
+
+Si acabas de clonar el proyecto, sigue estas instrucciones en tu terminal de VS Code:
+
+### 1. Preparar el entorno
+Copia y pega estos comandos uno por uno:
+```bash
+# Crear el entorno virtual
+python -m venv venv
+
+# Activar el entorno (PowerShell)
+.\venv\Scripts\Activate.ps1
+
+# Instalar librerías necesarias
+pip install -r requirements.txt
+
+#Crear un archivo `.env` en la raiz de la repo con la URL de la base de datos:
+
+DATABASE_URL=postgresql://postgres:contrasenia12345@db.ihudfsuvrzjoxhxhqyoz.supabase.co:5432/postgres
